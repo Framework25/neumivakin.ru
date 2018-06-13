@@ -418,6 +418,12 @@ template {
     height: 9px;
     display: inline-block;
     vertical-align: middle; }
+  .icon.tell {
+    background: url("../images/call.png") top left no-repeat;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle; }
 
 /*HEADER*/
 header {
@@ -654,21 +660,18 @@ html, body {
 
 /*men scroll*/
 .ms_men {
-  position: fixed;
-  right: 6%;
-  top: 70px;
-  width: 1440px;
-  margin: 0;
-  z-index: 5; }
-  @media screen and (max-width: 992px) {
+  position: relative;
+  margin: 0 0;
+  right: 0;
+  top: 0; }
+  @media screen and (max-width: 1199px) {
     .ms_men {
       display: none; } }
   .ms_men .men-bg {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
     right: 0;
-    width: 511px;
-    height: 874px; }
+    margin-bottom: -5px; }
     .ms_men .men-bgimg {
       width: 100%; }
 
@@ -685,7 +688,7 @@ html, body {
     font-family: "Gotham Pro";
     font-size: 14px;
     font-weight: 400; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1199px) {
       .about-me .ab-me_content {
         width: calc(100% - 0px); } }
     .about-me .ab-me_content .ab_text {
@@ -716,6 +719,10 @@ html, body {
     border: 2px solid #254c9e;
     display: block;
     text-align: center; }
+    @media screen and (max-width: 1199px) {
+      .btn_group .btn {
+        margin: 0 auto;
+        text-align: center; } }
     .btn_group .btn.read-more {
       padding: 10px 0;
       -webkit-transition: 0.3s;
@@ -732,6 +739,10 @@ html, body {
   padding: 60px 0; }
   .author-book .btn_group, .video-content .btn_group {
     margin-top: 60px; }
+    @media screen and (max-width: 1199px) {
+      .author-book .btn_group .btn, .video-content .btn_group .btn {
+        margin: 0 auto;
+        text-align: center; } }
 
 .section_content {
   color: #2a2a2a;
@@ -747,6 +758,10 @@ html, body {
     font-family: "Gotham Pro";
     font-size: 50px;
     font-weight: 300; }
+    @media screen and (max-width: 1199px) {
+      .section_content .section_title {
+        margin: 0 auto;
+        text-align: center; } }
     @media screen and (max-width: 992px) {
       .section_content .section_title {
         text-align: center; } }
@@ -777,7 +792,8 @@ html, body {
   margin-top: 30px; }
   @media screen and (max-width: 1199px) {
     .section_rows {
-      width: calc(50% - 30px); } }
+      width: calc(50% - 30px);
+      margin: 0 auto; } }
   @media screen and (max-width: 992px) {
     .section_rows {
       width: calc(100% - 30px);
@@ -842,7 +858,69 @@ html, body {
 
 .video-content {
   background-color: #1e418a; }
+  @media screen and (max-width: 1199px) {
+    .video-content {
+      margin: 0 auto;
+      text-align: center; } }
   .video-content .section_title {
     color: #ffffff; }
+  .video-content .video_cover iframe {
+    max-width: 100%;
+    position: relative;
+    z-index: 5; }
+  .video-content .btn_group .btn {
+    border: 2px solid #ffffff;
+    color: #ffffff; }
+    @media screen and (max-width: 1199px) {
+      .video-content .btn_group .btn {
+        margin: 0 auto;
+        text-align: center; } }
+    .video-content .btn_group .btn:hover {
+      border: 2px solid #ff621e; }
+
+/*footer*/
+footer {
+  background-color: #f1f2ed;
+  position: relative;
+  z-index: 5; }
+  footer .footer_content {
+    margin-top: 50px;
+    min-height: 103px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Gotham Pro"; }
+    footer .footer_content .footer_wigets {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #000000;
+      font-family: "Gotham Pro";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px; }
+      footer .footer_content .footer_wigets .tell {
+        color: #000000;
+        font-family: "Gotham Pro";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        text-decoration: none; }
+      footer .footer_content .footer_wigets a {
+        color: #254c9e;
+        font-family: "Gotham Pro";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-decoration: underline; }
+        footer .footer_content .footer_wigets a:hover {
+          text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+/*footer*/
+footer{
+  background-color: #f1f2ed;
+  position: relative;
+  z-index: 5;
+  .footer_content{
+    margin-top: 50px;
+    min-height: 103px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: $font;
+    .footer_wigets{
+      box-sizing: border-box;
+      color: #000000;
+      font-family: "Gotham Pro";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+       .tell{
+         color:$black;
+         font-family: "Gotham Pro";
+         font-size: 18px;
+         font-weight: 700;
+         line-height: 30px;
+         text-decoration: none;
+       }
+       a{
+         color: $blue;
+         font-family:$font;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 30px;
+         text-decoration: underline;
+         &:hover{
+           text-decoration: none;
+         }
+       }
+    }
+  }
+}

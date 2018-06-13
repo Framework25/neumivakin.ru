@@ -18,4 +18,11 @@ background: url("../images/pin.png") top left no-repeat;
     display: inline-block;
     vertical-align: middle;
   }
+  &.tell{
+    background: url("../images/call.png") top left no-repeat;
+    width:13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
