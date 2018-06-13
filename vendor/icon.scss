@@ -1,0 +1,21 @@
+/*Site icons*/
+.icon{
+  position: relative;
+  box-sizing: border-box;
+  margin-right:8px;
+
+   &.pin{
+background: url("../images/pin.png") top left no-repeat;
+     width: 9px;
+     height: 13px;
+     display: inline-block;
+     vertical-align: middle;
+   }
+  &.mail{
+    background: url("../images/mail.png") top left no-repeat;
+    width:13px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

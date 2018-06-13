@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('GothamPro-Medium.eot');
+  src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+  url('GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('GothamPro-Medium.woff') format('woff'),
+  url('GothamPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Bold.eot');
+  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+  url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro-Bold.woff') format('woff'),
+  url('../fonts/GothamPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Narrow';
+  src: url('../fonts/GothamProNarrow-Bold.eot');
+  src: local('Gotham Pro Narrow Bold'), local('GothamProNarrow-Bold'),
+  url('../fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamProNarrow-Bold.woff') format('woff'),
+  url('../fonts/GothamProNarrow-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Narrow';
+  src: url('../fonts/GothamProNarrow-Medium.eot');
+  src: local('Gotham Pro Narrow Medium'), local('GothamProNarrow-Medium'),
+  url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
+  url('../fonts/GothamProNarrow-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Light.eot');
+  src: local('Gotham Pro Light'), local('GothamPro-Light'),
+  url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro-Light.woff') format('woff'),
+  url('../fonts/GothamPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro.eot');
+  src: local('Gotham Pro'), local('GothamPro'),
+  url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro.woff') format('woff'),
+  url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+ width: 100%;
+  height: 100%;
+}
+/*global container*/
+.container{
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  .row{
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+}
+
+img{
+  @media screen and ($lg) {
+    max-width: 100%;
+  }
+
+}
+
+/*men scroll*/
+.ms_men{
+  position:fixed;
+  right:6%;
+  top:70px;
+ width:1440px;
+  margin:0;
+  z-index:5;
+  @media screen and ($md) {
+    display: none;
+  }
+  .men-bg{
+    position:absolute;
+    top:0;
+    right:0;
+    width:511px;
+    height:874px;
+      &img{
+        width:100%;
+      }
+   }
+}
+
+.about-me{
+  background-color: $light-grey;
+  padding:40px 0;
+  margin-top:30px;
+  .ab-me_content{
+    width: calc(40% - 15px);
+    @media screen and ($md) {
+      width: calc(100% - 0px);
+    }
+    word-break: break-all;
+    box-sizing: border-box;
+    color: $lignt-black;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+     .ab_text{
+       box-sizing: border-box;
+       p{
+         margin-bottom: 25px;
+         line-height: 24px;
+       }
+     }
+     h2{
+       color: $lignt-black;
+       font-family: $font;
+       font-size: 50px;
+       font-weight: 300;
+       line-height: 40.46px;
+       margin-bottom: 25px;
+     }
+  }
+}
+
+.btn_group{
+  box-sizing: border-box;
+   .btn{
+     color: $blue;
+     font-family: $font;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 30px;
+     max-width: 220px;
+     width: 100%;
+     border: 2px solid $blue;
+     display: block;
+     text-align: center;
+      &.read-more{
+        padding:10px 0;
+        transition: 0.3s;
+        &:hover{
+          border: 2px solid transparent;
+          background: $blue;
+          color: $white;
+        }
+      }
+
+   }
+   a{
+     text-decoration: none;
+   }
+}
+
+.author-book, .video-content{
+  padding:60px 0;
+   .btn_group{
+     margin-top: 60px;
+   }
+}
+.section_content{
+  color: $lignt-black;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  @media screen and ($md) {
+   line-height: normal;
+  }
+   .section_title{
+     color: $lignt-black;
+     font-family: $font;
+     font-size: 50px;
+     font-weight: 300;
+     @media screen and ($md) {
+      text-align: center;
+     }
+      h2{
+        font-size: 50px;
+        font-weight: 300;
+        margin: 0 0 40px;
+      }
+   }
+}
+
+.section_rows{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction:row;
+  align-items: center;
+  width: calc(40% - 30px);
+  margin-top:30px;
+  @media screen and ($lg) {
+    width: calc(50% - 30px);
+  }
+  @media screen and ($md) {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  @media screen and ($xl) {
+   flex-direction: column;
+  }
+  @media screen and ($sm) {
+    width: calc(100% - 0px);
+    margin: 0 auto;
+  }
+   .box_cover{
+     max-width: 136px;
+     width: 100%;
+     height: 223px;
+     object-fit: cover;
+     overflow: hidden;
+     margin:20px auto;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+   }
+   .box_expt{
+     box-sizing: border-box;
+     width: calc(70% - 0px);
+     text-align: center;
+     word-break: break-all;
+     margin: 0 auto;
+     @media screen and ($lg) {
+       width: calc(100% - 0px);
+     }
+     @media screen and ($md) {
+       width: calc(100% - 30px);
+     }
+     @media screen and ($sm) {
+       width: calc(100% - 0px);
+       margin: 0 auto;
+     }
+      .title{
+        color: $lignt-black;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 400;
+       line-height: 1.3;
+      }
+      a{
+        color: $blue;
+        font-size: 18px;
+        text-decoration: underline;
+        margin-top: 10px;
+        display: block;
+        transition: 0.3s;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+   }
+}
+
+.video-content{
+  background-color: $light-blue;
+   .section_title{
+     color: $white;
+   }
+}
