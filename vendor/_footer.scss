@@ -11,6 +11,10 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     font-family: $font;
+    @media screen and ($sm) {
+     flex-direction: column;
+      padding:30px 0;
+    }
     .footer_wigets{
       box-sizing: border-box;
       color: #000000;

@@ -2,41 +2,42 @@
 header{
   box-sizing: border-box;
   position: relative;
+  .header-contact{
+    position: relative;
+
+    ul{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      @media screen and ($md) {
+        justify-content: space-between;
+      }
+      li{
+        list-style: none;
+        padding-right: 30px;
+        @media screen and ($md) {
+          padding: 0 20px;
+        }
+        a{
+          color: $orange;
+          font-family: $font;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px;
+          text-decoration: underline;
+          transition: 0.3s;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+  }
     .header_content{
       padding:40px 0;
       box-sizing: border-box;
-       .header-contact{
-        position: relative;
 
-          ul{
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            @media screen and ($md) {
-             justify-content: space-between;
-            }
-            li{
-              list-style: none;
-              padding-right: 30px;
-              @media screen and ($md) {
-               padding: 0;
-              }
-               a{
-               color: $orange;
-                 font-family: $font;
-                 font-size: 16px;
-                 font-weight: 400;
-                 line-height: 30px;
-                 text-decoration: underline;
-                 transition: 0.3s;
-                 &:hover{
-                   text-decoration: none;
-                 }
-               }
-
-            }
-          }
-       }
        .header_phone{
          color: $blue;
          font-family: $font;
@@ -162,6 +163,108 @@ header{
                 width: calc(100% - 0px);
                 padding:15px 0;
               }
+            }
+         }
+      }
+   }
+}
+
+.all-page{
+  box-sizing: border-box;
+
+  @media screen and ($md) {
+  padding:30px 0;
+  }
+   .head_content{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: center;
+     min-height: 103px;
+     @media screen and ($md) {
+       flex-direction: column;
+     }
+      .logo-block{
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-items: center;
+        color: $blue;
+        font-family: $font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        width: calc(56% - 0px);
+        @media screen and ($lg) {
+          width: calc(55% - 0px);
+          justify-content: space-between;
+        }
+        @media screen and ($md) {
+          width: calc(100% - 0px);
+          flex-direction: column;
+        }
+         a{
+           color: $lignt-black;
+           font-family: $font;
+           font-size: 24px;
+           font-weight: 700;
+           line-height: 40.46px;
+           text-decoration: none;
+           @media screen and ($lg) {
+            font-size: 1.3em;
+           }
+         }
+         .site_desc{
+position: relative;
+           &:before{
+             content: "";
+             width: 1px;
+             height: 22px;
+             background-color: #e6e6e6;
+             position: absolute;
+             left: 0;
+             top: 0;
+            margin-left: -22px;
+             margin-top: 8px;
+             @media screen and ($md) {
+               display: none;
+             }
+           }
+         }
+      }
+   }
+   .top_nav{
+     background-color: $blue;
+     @media screen and ($md) {
+      margin-top:40px;
+     }
+      .nav_menu{
+        box-sizing: border-box;color: $white;
+        font-family: $font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 680px;
+        margin: 0 auto;
+         ul{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           list-style: none;
+           @media screen and ($md) {
+             flex-direction: column;
+           }
+            li{
+               a{
+                 color: $white;
+                 text-decoration: none;
+                 padding:10px 0;
+                 display: block;
+                 transition: 0.3s;
+                 &:hover{
+                   color: $orange;
+                 }
+               }
             }
          }
       }
