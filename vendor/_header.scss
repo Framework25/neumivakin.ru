@@ -5,6 +5,7 @@ header{
   .header-contact{
     position: relative;
 
+
     ul{
       display: flex;
       justify-content: flex-start;
@@ -12,11 +13,16 @@ header{
       @media screen and ($md) {
         justify-content: space-between;
       }
+
       li{
         list-style: none;
         padding-right: 30px;
         @media screen and ($md) {
           padding: 0 20px;
+        }
+        @media screen and ($sm) {
+          text-align: center;
+          margin: 0 auto;
         }
         a{
           color: $orange;

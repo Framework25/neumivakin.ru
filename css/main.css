@@ -452,6 +452,10 @@ header {
         @media screen and (max-width: 992px) {
           header .header-contact ul li {
             padding: 0 20px; } }
+        @media screen and (max-width: 680px) {
+          header .header-contact ul li {
+            text-align: center;
+            margin: 0 auto; } }
         header .header-contact ul li a {
           color: #ff621e;
           font-family: "Gotham Pro";
